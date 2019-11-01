@@ -1,0 +1,19 @@
+[
+  {
+    "ext": ".png",
+    "contentType": "image/png"
+  },
+  {
+    "ext": ".jpeg",
+    "contentType": "image/jpeg"
+  },
+  {
+    "ext": "jpg",
+    "contentType": "image/jpeg"
+  },
+  {
+    "ext": ".txt",
+    "contentType": "text/plain"
+  }
+
+]
