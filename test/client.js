@@ -24,14 +24,20 @@ const Upload = require('../index');
   file_arr = files.map(file=>{
     return path.join(__dirname, './files', file);
   })
-
+  
+  // 初始化任务参数
   Upload.init({
     base_url: 'http://127.0.0.1:3008/',
     check_path: 'check_file',
     upload_path: 'file',
   });
+
+  // 添加任务
   Upload.createJob(file_arr);
+  // 执行任务
   Upload.process();
+
+  // 查询任务当前状态
   for (let i = 0; i < 10; i++) {
     const status = await Upload.status();
     console.log(status);
