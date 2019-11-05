@@ -36,7 +36,7 @@ router.post('/file', async (req, res) => {
 })
 
 router.post('/check_file', async (req, res) => {
-  console.log(req.body.filenames)
+  // console.log(req.body.filenames)
   res.send(req.body.filenames)
 })
 
