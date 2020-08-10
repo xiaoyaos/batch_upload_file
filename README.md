@@ -4,9 +4,8 @@
 脱离redis， 基于内存， 批量上传文件到远程服务器，按照设置大小设置每次请求的包的大小和并发数量限制
 
 ## 版本历史
-8ab6b2e: 这是版本V 0.2.0
-  该本版支持调用者实现上传逻辑和接收回调
-  
+***8ab6b2e: 这是版本V 0.2.0 该本版支持调用者实现上传逻辑和接收回调***
+
 ## API
 初始化任务队列
 ```js
@@ -25,7 +24,7 @@ Upload.createJob(file_arr);
 
 执行任务
 ```js
-Upload.process();
+Upload.process(upload, callback); //about upload and callback detail please Reference ./test demo
 ```
 
 查询当前任务状态
